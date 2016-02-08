@@ -36,12 +36,25 @@
   <scm>
     <connection>scm:git:git://github.com/exo-addons/sirona-addon.git</connection>
     <developerConnection>scm:git:git@github.com:exo-addons/sirona-addon.git</developerConnection>
-    <url>https://github.com/exo-addons/sirona-addon</url>
     <tag>HEAD</tag>
+    <url>https://github.com/exo-addons/sirona-addon</url>
   </scm>
   <properties>
+    <org.exoplatform.platform.version>4.3.0</org.exoplatform.platform.version>
     <sirona.version>0.2-incubating</sirona.version>
   </properties>
+  <dependencyManagement>
+    <dependencies>
+      <!-- Import versions from platform project -->
+      <dependency>
+        <groupId>org.exoplatform.platform</groupId>
+        <artifactId>platform</artifactId>
+        <version>${org.exoplatform.platform.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
   <dependencies>
     <!-- sirona dependencies -->
     <dependency>
@@ -56,28 +69,6 @@
       <version>${sirona.version}</version>
       <classifier>classes</classifier>
       <scope>provided</scope>
-      <exclusions>
-        <!-- Already provided in eXo platform -->
-        <exclusion>
-          <artifactId>commons-lang3</artifactId>
-          <groupId>org.apache.commons</groupId>
-        </exclusion>
-        <!-- Already provided in eXo platform -->
-        <exclusion>
-          <artifactId>commons-codec</artifactId>
-          <groupId>commons-codec</groupId>
-        </exclusion>
-        <!-- Already provided in eXo platform -->
-        <exclusion>
-          <artifactId>commons-collections</artifactId>
-          <groupId>commons-collections</groupId>
-        </exclusion>
-        <!-- Already provided in eXo platform -->
-        <exclusion>
-          <artifactId>commons-lang</artifactId>
-          <groupId>commons-lang</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>org.apache.sirona</groupId>

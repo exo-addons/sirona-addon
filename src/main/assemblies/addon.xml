@@ -31,6 +31,13 @@
       <includes>
         <include>*:*:jar</include>
       </includes>
+      <excludes>
+        <exclude>*:commons-codec:jar</exclude>
+        <exclude>*:commons-collections:jar</exclude>
+        <exclude>*:commons-lang:jar</exclude>
+        <exclude>*:commons-lang3:jar</exclude>
+        <exclude>*:velocity:jar</exclude>
+      </excludes>
       <scope>provided</scope>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>
