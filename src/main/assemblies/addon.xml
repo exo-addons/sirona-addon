@@ -27,9 +27,10 @@
   <includeBaseDirectory>false</includeBaseDirectory>
   <dependencySets>
     <dependencySet>
-      <outputDirectory>/${project.build.finalName}/lib</outputDirectory>
+      <outputDirectory>/</outputDirectory>
       <includes>
         <include>*:*:jar</include>
+        <include>org.apache.sirona:*:jar</include>
       </includes>
       <excludes>
         <exclude>*:commons-codec:jar</exclude>
@@ -38,6 +39,15 @@
         <exclude>*:commons-lang3:jar</exclude>
         <exclude>*:velocity:jar</exclude>
       </excludes>
+      <scope>provided</scope>
+      <useProjectArtifact>false</useProjectArtifact>
+    </dependencySet>
+    <dependencySet>
+      <outputDirectory>/</outputDirectory>
+      <outputFileNameMapping>sirona.war</outputFileNameMapping>
+      <includes>
+        <include>org.apache.sirona:sirona-reporting-webapp:war</include>
+      </includes>
       <scope>provided</scope>
       <useProjectArtifact>false</useProjectArtifact>
     </dependencySet>

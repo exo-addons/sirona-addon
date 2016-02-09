@@ -1,0 +1,18 @@
+[
+  {
+    "id": "exo-sirona",
+    "version": "1.x-SNAPSHOT",
+    "unstable": true,
+    "name": "Apache Sirona Addon for eXo platform",
+    "description": "adds Apache Sirona monitoring screens into eXo platform",
+    "downloadUrl": "file:///Users/fdrouet/Dev/Sources/exo/exo-addons/sirona-addon/target/sirona-addon.zip",
+    "vendor": "eXo",
+    "license": "LGPLv3",
+    "licenseUrl": "https://www.gnu.org/licenses/lgpl-3.0.txt",
+    "mustAcceptLicense": false,
+    "supportedDistributions": "community,enterprise",
+    "supportedApplicationServers": "tomcat,jboss",
+    "compatibility": "[4.0.0,)"
+  }
+
+]
