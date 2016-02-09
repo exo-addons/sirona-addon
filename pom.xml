@@ -41,7 +41,7 @@
   </scm>
   <properties>
     <org.exoplatform.platform.version>4.3.0</org.exoplatform.platform.version>
-    <sirona.version>0.2-incubating</sirona.version>
+    <sirona.version>0.3-incubating</sirona.version>
   </properties>
   <dependencyManagement>
     <dependencies>
@@ -65,9 +65,15 @@
     </dependency>
     <dependency>
       <groupId>org.apache.sirona</groupId>
-      <artifactId>sirona-reporting</artifactId>
+      <artifactId>sirona-reporting-api</artifactId>
       <version>${sirona.version}</version>
-      <classifier>classes</classifier>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.sirona</groupId>
+      <artifactId>sirona-reporting-webapp</artifactId>
+      <version>${sirona.version}</version>
+      <type>war</type>
       <scope>provided</scope>
     </dependency>
     <dependency>
