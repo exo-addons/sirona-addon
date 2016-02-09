@@ -29,14 +29,14 @@
   </parent>
   <groupId>org.exoplatform.addons.sirona</groupId>
   <artifactId>sirona-addon</artifactId>
-  <version>1.2.0</version>
+  <version>1.x-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>Apache Sirona Addon for eXo platform</name>
   <description>The add-on adds Apache Sirona monitoring screens into eXo platform</description>
   <scm>
     <connection>scm:git:git://github.com/exo-addons/sirona-addon.git</connection>
     <developerConnection>scm:git:git@github.com:exo-addons/sirona-addon.git</developerConnection>
-    <tag>1.2.0</tag>
+    <tag>HEAD</tag>
     <url>https://github.com/exo-addons/sirona-addon</url>
   </scm>
   <properties>
